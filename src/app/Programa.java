@@ -1,13 +1,15 @@
 package app;
 
-import boardgame.Position;
-import boardgame.Tabuleiro;
+import xadrez.Match;
+
 
 public class Programa {
 
 	public static void main(String[] args) {
 
-		Tabuleiro tab = new Tabuleiro(8, 8);
+		
+		Match chessMatch = new Match();
+		UI.printTabuleiro(chessMatch.getPeças());
 		
 	}
 
